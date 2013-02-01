@@ -1,0 +1,85 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+html,body {
+	margin:0;
+	padding:0;
+	border:0;
+	height:100%;
+	font-family: "Geneva CE", "Arial CE", sans-serif;
+	text-align: justify;
+	font-weight: normal;
+	font-size:100%;
+	background-color: #5C5C5C;
+	color:#222;
+}
+
+.container {
+	min-height:100%;
+	position:relative;
+	height: auto !important;
+	height: 100%;
+	width: 1024px;
+	background-color: #FFF;
+	color:#000;
+	margin: 0 auto;
+}
+
+.header {
+	height: 56px;
+	background-repeat:no-repeat, repeat-x; 
+	background-position: left top;
+	position: relative;
+	background-color:#72B0D1; 
+	color: #FFF;
+	margin: 0;
+	border-right: 1px solid #7CAEC9;
+	padding-left: 5px;
+}
+
+.canvas {
+	padding-bottom:2em;
+	height: 100%;
+}
+
+.navigation {
+	background-color:#EDEDED;
+	border: 1px solid silver;
+	padding: 2px 1em;
+	height:auto;
+	vertical-align: middle;
+}
+
+.content {
+/*	clear:both; */
+padding-left: 5px;
+}
+
+.footer {
+	height:12px;
+	width: 100%;
+	position:absolute;
+	padding: 2px 0; 
+	bottom:0; 
+	background-color:#EDEDED;
+	color:#3C3C41;
+	font-size: 10px;
+}
+.loginbox{
+	margin:0;
+	text-shadow: 3px 3px 6px #3C3C41;
+	position: absolute; top: 0; right: 0;
+	padding-right:1em;
+	padding-top:10px;
+}

@@ -1,0 +1,5 @@
+<% if current_user %>
+<%= link_to 'Posts', posts_url %> <%= link_to 'users', users_url %>
+<% else %>
+<%= link_to 'Posts', posts_url %>
+<% end %>

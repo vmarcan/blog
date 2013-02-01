@@ -1,0 +1,17 @@
+checking for Ruby version >= 1.8.5... -------------------- yes
+
+--------------------
+
+"gcc -o conftest -IC:/prace/Rails/Ruby1.9.3/include/ruby-1.9.1/i386-mingw32 -IC:/prace/Rails/Ruby1.9.3/include/ruby-1.9.1/ruby/backward -IC:/prace/Rails/Ruby1.9.3/include/ruby-1.9.1 -I.     -O3 -fno-omit-frame-pointer -g -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration conftest.c  -L. -LC:/prace/Rails/Ruby1.9.3/lib -L.    -lCORE_RL_magick_ -lX11  -lmsvcrt-ruby191  -lshell32 -lws2_32 -limagehlp  "
+c:/prace/rails/devkit/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot find -lCORE_RL_magick_
+c:/prace/rails/devkit/mingw/bin/../lib/gcc/mingw32/4.5.2/../../../../mingw32/bin/ld.exe: cannot find -lX11
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main() {return 0;}
+/* end */
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Group blog</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+        	<h1 class="banner">Group Blog</h1>
+                <p class="loginbox">
+          			<%= render "layouts/user" %>
+				</p>
+	</div> 
+
+	<div class="canvas">
+        	<% flash.each do |name, msg| %>
+			<%= content_tag :div, msg, :id => "flash_#{name}" %>
+			<% end %>
+		<div class="navigation">
+			<%= render "layouts/nav" %>
+		</div>
+		<br />
+		<div class="content">
+			<%= yield %>	
+		</div>
+
+	</div> 
+
+	<div class="footer">
+        vit marcan
+	</div> 
+</div> 
+</body>
+</html>
