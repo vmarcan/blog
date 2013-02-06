@@ -24,6 +24,18 @@ html,body {
 	background-color: #5C5C5C;
 	color:#222;
 }
+a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  &:visited {
+    color: #000;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
 
 .container {
 	min-height:100%;
@@ -38,8 +50,6 @@ html,body {
 
 .header {
 	height: 56px;
-	background-repeat:no-repeat, repeat-x; 
-	background-position: left top;
 	position: relative;
 	background-color:#72B0D1; 
 	color: #FFF;
@@ -56,7 +66,7 @@ html,body {
 .navigation {
 	background-color:#EDEDED;
 	border: 1px solid silver;
-	padding: 2px 1em;
+	padding: 5px;
 	height:auto;
 	vertical-align: middle;
 }
@@ -83,3 +93,50 @@ padding-left: 5px;
 	padding-right:1em;
 	padding-top:10px;
 }
+
+.pagination {
+  background: white;
+  cursor: default;
+  /* self-clearing method: */ }
+  .pagination a, .pagination span, .pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+  .pagination .disabled {
+    color: #999999;
+    border: 1px solid #dddddd; }
+  .pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background: #72B0D1;
+    color: white;
+    border: 1px solid #72B0D1; }
+  .pagination a {
+    text-decoration: none;
+    color: #72B0D1;
+    border: 1px solid #72B0D1; }
+    .pagination a:hover, .pagination a:focus {
+      color: #000;
+      border-color: #000033; }
+  .pagination .page_info {
+    background: #72B0D1;
+    color: white;
+    padding: 0.4em 0.6em;
+    width: 22em;
+    margin-bottom: 0.3em;
+    text-align: center; }
+    .pagination .page_info b {
+      color: #000033;
+      background: #6aa6ed;
+      padding: 0.1em 0.25em; }
+  .pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .pagination {
+    height: 1%; }
+  *:first-child + html .pagination {
+    overflow: hidden; }
